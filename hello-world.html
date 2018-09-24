@@ -1,19 +1,28 @@
-<link rel="import" href="../polymer/polymer-element.html">
-
+<!-- Imports polymer -->
+<link rel="import" href="../polymer/polymer.html">
+<!-- Defines element markup -->
 <dom-module id="hello-world">
-  <template>
-    <style>
-      :host {
-        display: block;
-      }
-    </style>
-    <h2>Hello!</h2>
-  </template>
-
-  <script>
-
-    Polymer ({
-      is:'hello-world'
-    });
-  </script>
+    <template>
+        <input type="text" value="{{value}}">
+        <p>Hello <strong>{{who}}</strong> :)</p>
+    </template>
 </dom-module>
+
+<!-- Registers custom element -->
+<script>
+Polymer({
+    is: 'hello-world',
+    properties: {
+        'value': {
+            type: String,
+            reflectToAttribute: true,
+            notify: true,
+            value: "text"
+        },
+        who: {
+            type: String,
+           value: 'World'
+        }
+    }
+});
+</script>
