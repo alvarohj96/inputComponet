@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "elements": [
+    {
+      "description": "Defines element markup\n\nRegisters custom element",
+      "summary": "",
+      "path": "hello-world.html",
+      "properties": [
+        {
+          "name": "value",
+          "type": "string | null | undefined",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 17,
+              "column": 8
+            },
+            "end": {
+              "line": 22,
+              "column": 9
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "notify": true,
+              "attributeType": "String"
+            }
+          },
+          "defaultValue": "\"text\""
+        },
+        {
+          "name": "who",
+          "type": "string | null | undefined",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 23,
+              "column": 8
+            },
+            "end": {
+              "line": 26,
+              "column": 9
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "String"
+            }
+          },
+          "defaultValue": "\"World\""
+        }
+      ],
+      "methods": [],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 14,
+          "column": 8
+        },
+        "end": {
+          "line": 28,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "attributes": [
+        {
+          "name": "value",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 17,
+              "column": 8
+            },
+            "end": {
+              "line": 22,
+              "column": 9
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined"
+        },
+        {
+          "name": "who",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 23,
+              "column": 8
+            },
+            "end": {
+              "line": 26,
+              "column": 9
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined"
+        }
+      ],
+      "events": [
+        {
+          "type": "CustomEvent",
+          "name": "value-changed",
+          "description": "Fired when the `value` property changes.",
+          "metadata": {}
+        }
+      ],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "hello-world"
+    }
+  ]
+}

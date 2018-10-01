@@ -3,7 +3,7 @@
 <!-- Defines element markup -->
 <dom-module id="hello-world">
     <template>
-        <input type="text" value="{{value}}">
+        <input type="text" value="{{value:input}}">
         <p>Hello <strong>{{who}}</strong> :)</p>
     </template>
 </dom-module>
@@ -13,7 +13,7 @@
 Polymer({
     is: 'hello-world',
     properties: {
-        'value': {
+        value: {
             type: String,
             reflectToAttribute: true,
             notify: true,
