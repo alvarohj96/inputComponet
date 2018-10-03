@@ -1,0 +1,23 @@
+<!-- Imports polymer -->
+<link rel="import" href="../polymer/polymer.html">
+<!-- Defines element markup -->
+<dom-module id="input-Component">
+    <template>
+        <input type="text" value="{{value:input}}">
+    </template>
+</dom-module>
+
+<!-- Registers custom element -->
+<script>
+Polymer({
+    is: 'input-Component',
+    properties: {
+        value: {
+            type: String,
+            reflectToAttribute: true,
+            notify: true,
+            value: "text"
+        }
+    }
+});
+</script>
